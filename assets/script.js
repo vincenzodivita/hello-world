@@ -1,6 +1,7 @@
-let input = document.getElementById("input").innerHTML;
+const input = document.querySelector('#input');
+const output = document.querySelector('#output');
+const btn = document.querySelector("button"); 
 
-function run() {
-    document.getElementById("output").innerHTML = input;
-}
-
+btn.addEventListener('click', function () {
+    output.innerHTML =input.value;
+});
